@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x, 14.x]
+        node-version: [14.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -28,9 +28,9 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12.x
-        registry-url: 'https://registry.npmjs.org'
+        registry-url: 'https://npm.pkg.github.com/azu'
     - run: npm install
     - run: npx rollingversions publish
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
