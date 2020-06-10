@@ -1,8 +1,6 @@
 name: Release
 
-on:
-  repository_dispatch:
-    types: [rollingversions_publish_approved]
+on: [ push ]
 
 jobs:
   test:
