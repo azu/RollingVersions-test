@@ -1,0 +1,20 @@
+{
+  "name": "RollingVersions-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azu/RollingVersions-test.git"
+  },
+  "keywords": [],
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/RollingVersions-test/issues"
+  },
+  "homepage": "https://github.com/azu/RollingVersions-test#readme"
+}
